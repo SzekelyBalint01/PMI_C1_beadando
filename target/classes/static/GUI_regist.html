@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+
+    
+    <div class="container" style="padding-top: 1rem">
+      <form id="newUserForm">
+        <!-- 2 column grid layout with text inputs for the first and last names -->
+        <div class="row mb-4">
+          <div class="col">
+            <div class="form-outline">
+              <input type="text" id="fname" class="form-control" />
+              <label class="form-label" for="fname">Vezetéknév</label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-outline">
+              <input type="text" id="lname" class="form-control" />
+              <label class="form-label" for="lname">Keresztnév</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text input -->
+        <div class="form-outline mb-4">
+          <label class="form-label" for="adoazon">Adóazonosító: </label>
+          <input type="text" id="adoazon" class="form-control" />
+          
+        </div>
+
+        <!-- Text input -->
+        <div class="form-outline mb-4">
+          <input type="text" id="telephely" class="form-control" />
+          <label class="form-label" for="telephely">Telephely</label>
+        </div>
+
+        <!-- Text input -->
+        <div class="form-outline mb-4">
+          <input type="text" id="szervezet" class="form-control" />
+          <label class="form-label" for="szervezet">Szervezet</label>
+        </div>
+
+        <!-- Text input -->
+        <div class="form-outline mb-4">
+          <input type="text" id="belepeskelte" class="form-control" />
+          <label class="form-label" for="belepeskelte">Belépés kelte</label>
+        </div>
+
+        <!-- Text input -->
+
+        <div class="form-outline mb-4">
+          <input type="text" id="kilepeskelte" class="form-control" />
+          <label class="form-label" for="kilepeskelte">Kilépés kelte</label>
+        </div>
+
+        <!-- Text input -->
+        <div class="form-outline mb-4">
+          <input type="text" id="bruttoalapber" class="form-control" />
+          <label class="form-label" for="bruttoalapber">Bruttó alapbére (Ft)</label>
+        </div>
+
+        <!-- Text input -->
+        <div class="form-outline mb-4">
+          <input type="text" id="cegneve" class="form-control" />
+          <label class="form-label" for="cegneve">Cég nevev</label>
+        </div>
+
+        <!-- Text input -->
+        <div class="form-outline mb-4">
+          <input type="text" id="cegadoszama" class="form-control" />
+          <label class="form-label" for="cegadoszama">Cég adószáma</label>
+        </div>
+
+        <!-- Text input -->
+        <div class="form-outline mb-4">
+          <input type="text" id="cegszekhelye" class="form-control" />
+          <label class="form-label" for="cegszekhelye">Cég székhelye</label>
+        </div>
+
+        <!-- Text input -->
+        <div class="form-outline mb-4">
+          <input type="text" id="ledolgnap" class="form-control" />
+          <label class="form-label" for="ledolgnap">Ledolgozott nap</label>
+        </div>
+
+        <!-- Text input -->
+        <div class="form-outline mb-4">
+          <input type="text" id="munkaszunnap" class="form-control" />
+          <label class="form-label" for="munkaszunnap">Munkaszüneti nap</label>
+        </div>
+
+        <!-- Text input -->
+        <div class="form-outline mb-4">
+          <input type="text" id="torzsber" class="form-control" />
+          <label class="form-label" for="torzsber">Törzsbér  (Ft)</label>
+        </div>
+
+        <!-- save button -->
+        <input type="button" value="Mentés" class="btn btn-primary btn-block mb-4" data-toggle="modal" data-target="#exampleModalCenter">
+        
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Warning!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"></span>
+                </button>
+              </div>
+            <div class="modal-body">
+              Biztos menti a változtatásokat?
+          </div>
+          <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Mégse</button>
+        <input type="submit" value="Mentés" class="btn btn-primary"></button>
+      </div>
+    </div>
+      </div>
+    </div>
+      </form>
+    </div>
+    <script src="btnNewUseSave.js" type="module"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
