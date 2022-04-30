@@ -3,7 +3,6 @@
   "productName": "pmi_c1_beadando",
   "version": "1.0.0",
   "description": "My Electron application description",
-  "main": "src/main/java/com/example/demo/DemoApplication.java",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
